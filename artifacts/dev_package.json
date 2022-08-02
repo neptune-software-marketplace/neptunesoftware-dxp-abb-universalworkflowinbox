@@ -1,0 +1,54 @@
+{
+	"id": "D2C399BF-3B12-ED11-BD6E-000D3AB1D9FF",
+	"createdAt": "2022-08-02T08:18:55.526Z",
+	"createdBy": "kristin.eliassen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-universalworkflowinbox",
+		"testServers": []
+	},
+	"name": "neptunesoftware-dxp-abb-universalworkflowinbox",
+	"description": null,
+	"ver": "22.8.2.820",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "F75C24FD-AA32-4BB7-8F0F-0ED6972ACE3B",
+			"ver": "22.8.2.1019",
+			"application": "planet9_inbox_tile",
+			"title": "Inbox Live Tile",
+			"description": "Inbox Live Tile"
+		},
+		{
+			"id": "E336B55E-CB88-EC11-A507-28187814B6F0",
+			"ver": "22.8.2.1019",
+			"application": "planet9_inbox_f3_v2",
+			"title": "Workflow Inbox",
+			"description": "Workflow Inbox - Fiori 3"
+		}
+	],
+	"api": [],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": [],
+	"connector": []
+}
