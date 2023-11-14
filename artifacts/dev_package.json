@@ -1,5 +1,5 @@
 {
-	"id": "D2C399BF-3B12-ED11-BD6E-000D3AB1D9FF",
+	"id": "d2c399bf-3b12-ed11-bd6e-000d3ab1d9ff",
 	"createdAt": "2022-08-02T08:18:55.526Z",
 	"createdBy": "kristin.eliassen@neptune-software.com",
 	"git": {
@@ -13,23 +13,21 @@
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "F75C24FD-AA32-4BB7-8F0F-0ED6972ACE3B",
-			"ver": "22.8.2.1019",
-			"application": "planet9_inbox_tile",
-			"title": "Inbox Live Tile",
-			"description": "Inbox Live Tile"
+			"id": "e431c068-ed91-4577-9b90-bfa1524eea02",
+			"application": "planet9_inbox_f3_v2_1",
+			"title": "Workflow Inbox",
+			"description": "Workflow Inbox - Fiori 3"
 		},
 		{
-			"id": "E336B55E-CB88-EC11-A507-28187814B6F0",
-			"ver": "22.8.2.1019",
+			"id": "e336b55e-cb88-ec11-a507-28187814b6f0",
 			"application": "planet9_inbox_f3_v2",
 			"title": "Workflow Inbox",
 			"description": "Workflow Inbox - Fiori 3"
 		}
 	],
 	"api": [],
-	"odataMock": [],
 	"odataSource": [],
+	"odataMock": [],
 	"dictionary": [],
 	"jsclass": [],
 	"jsscript_group": [],
@@ -47,8 +45,13 @@
 	"systems": [],
 	"doc": [],
 	"wf_notifications": [],
-	"wf_definition": [],
 	"department": [],
 	"script_scheduler": [],
-	"connector": []
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
 }

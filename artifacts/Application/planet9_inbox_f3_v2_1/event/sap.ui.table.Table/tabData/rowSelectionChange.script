@@ -1,0 +1,6 @@
+let context = this.getContextByIndex(this.getSelectedIndex());
+
+if (context) {
+    let data = context.getObject();
+    getDetail(data.id, false);
+}

@@ -1,0 +1,13 @@
+// sap.n.Planet9.currObject = this;
+// sap.n.Planet9.openUsers('single', function (user) {
+//     modelappData.oData.substitute = user.username;
+//     modelappData.refresh();
+// });
+if (!modeltabUsers.oData.length) {
+    butUserUpdate.firePress();
+}
+ //LP 27/06/2023
+globalUserCaller = 'SUBST';
+
+diaUser.open();
+

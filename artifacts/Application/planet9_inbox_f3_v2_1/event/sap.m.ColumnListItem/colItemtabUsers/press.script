@@ -1,0 +1,19 @@
+var context = oEvent.oSource.getBindingContext();
+var data = context.getObject();
+
+if (globalUserCaller == 'SUBST') {
+    modelappData.oData.substitute = data.username;
+    modelformDetail.oData.substitute = data.username;
+    modelappData.refresh();
+    modelformDetail.refresh();
+} else {
+    informForwardUsers.addToken(new sap.m.Token({
+        key: data.username,
+        text: data.name
+    }));
+
+
+}
+
+diaUser.close();
+

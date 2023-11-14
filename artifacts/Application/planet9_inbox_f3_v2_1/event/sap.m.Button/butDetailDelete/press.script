@@ -1,0 +1,44 @@
+sap.n.Planet9.function({
+    id: dataSet,
+    method: 'Delete',
+    data: modelappData.oData,
+    success: function (data) {
+        toolStartUpdate.firePress();
+        tabData.clearSelection();
+        sap.m.MessageToast.show('Deleted');
+        butDetailBack.firePress();
+
+
+        // oApp.setBusy(false);
+        // oApp.back();
+    }
+});
+/*
+sap.n.Planet9.objectDelete(function() {
+    //oApp.setBusy(true);
+    //sap.n.Planet9.setToolbarButton(false);
+
+    // Unlock
+    sap.n.Planet9.function({
+        id: 'Locking',
+        method: 'Unlock',
+        data: {
+            objectType: dataSet,
+            objectID: modelappData.oData.id,
+        },
+        success: function(data) {}
+    });
+
+    sap.n.Planet9.function({
+        id: dataSet,
+        method: 'Delete',
+        data: modelappData.oData,
+        success: function(data) {
+            toolStartUpdate.firePress();
+            tabData.clearSelection();
+           // oApp.setBusy(false);
+           // oApp.back();
+        }
+    });
+}, 'Substitution');
+*/

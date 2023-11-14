@@ -1,0 +1,8 @@
+/*
+sap.n.Planet9.currObject = this;
+sap.n.Planet9.openUsers('single', function (user) {
+    modelappData.oData.username = user.username;
+    modelappData.refresh();
+}); */
+
+diaUser.open();

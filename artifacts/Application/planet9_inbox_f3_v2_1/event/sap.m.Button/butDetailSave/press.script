@@ -1,0 +1,35 @@
+
+
+// Check Required Fields
+//if (!sap.n.Planet9.requiredFieldsCheck(requiredFields)) return;
+
+// Save
+//oApp.setBusy(true);
+sap.n.Planet9.function({
+    id: dataSet,
+    method: 'Save',
+    data: modelappData.oData,
+    success: function (data) {
+        if (data.id) {
+            modelappData.oData.id = data.id;
+            modelappData.oData.updatedAt = data.updatedAt;
+            modelappData.oData.changedBy = data.changedBy;
+            modelappData.oData.createdAt = data.createdAt;
+            modelappData.oData.createdBy = data.createdBy;
+            modelappData.refresh();
+            modelformDetail.setData(modelappData.getData());
+        }
+
+        dataSaved = modelappData.getJSON();
+        //toolStartUpdate.firePress();
+        sap.m.MessageToast.show('Saved');
+
+        //Update list after save:
+        toolStartUpdate.firePress();
+
+        //Redetermine approvers:
+        ReRun();
+
+    }
+
+});

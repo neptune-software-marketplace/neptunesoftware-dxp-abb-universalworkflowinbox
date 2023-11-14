@@ -1,0 +1,2 @@
+globalUserCaller = 'WF';
+diaUser.open();

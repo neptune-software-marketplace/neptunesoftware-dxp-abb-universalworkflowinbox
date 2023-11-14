@@ -1,0 +1,28 @@
+
+getDetail(modelappData.oData.id, true);
+
+//oApp.setBusy(true);
+//sap.n.Planet9.requiredFieldsClear(requiredFields);
+
+/*
+
+sap.n.Planet9.function({
+    id: 'Locking',
+    method: 'Lock',
+    data: {
+        objectType: dataSet,
+        objectID: modelappData.oData.id
+    },
+    success: function (data) {
+        console.log("LOCK: ", data);
+         if (data.object) {
+             modeldiaLocked.setData(data.object);
+             sap.n.Planet9.lockCallback = butDetailSetEdit;
+             diaLocked.open();
+         } else {
+             getDetail(modelappData.oData.id, true);
+         }
+    }
+}); */
+
+

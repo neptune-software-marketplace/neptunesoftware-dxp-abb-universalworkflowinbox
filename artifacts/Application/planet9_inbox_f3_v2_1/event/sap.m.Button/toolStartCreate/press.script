@@ -1,0 +1,16 @@
+window.modelSubData = modelappData;
+
+modelappData.setData({});
+modelformDetail.setData({});
+
+if (sap.n) {
+    let data = {};
+    data.username = AppCache.userInfo.username;
+    modelappData.setData(data);
+    modelformDetail.setData(data);
+}
+
+toggleEdit(true);
+
+dataSaved = modelappData.getJSON();
+showSubstitutionsDetail();

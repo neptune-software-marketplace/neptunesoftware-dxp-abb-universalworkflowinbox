@@ -1,0 +1,33 @@
+tabData.setBusy(true);
+
+let dataSet = 'WorkflowSubstitution';
+let uname;
+let myData;
+sap.n.Planet9.function({
+    id: dataSet,
+    method: 'List',
+    success: function (data) {
+        //console.log("SUBSTDATA: ", data);
+        if(modelappControl.oData.mySubst){
+            uname = AppCache.userInfo.username;
+            myData = data.filter(f => f.username == uname);
+        }else{
+            uname = AppCache.userInfo.username;
+            myData = data.filter(f => f.substitute == uname);
+        }
+
+        myData.map((wf) => {
+            wf.icon = wf.active ? 'sap-icon://status-in-process' : 'sap-icon://status-inactive';
+            wf.state = wf.active ? 'Success' : 'Error';
+        })
+        modeltabData.setData(myData);
+       // sap.n.Utils.uiTableSortApply(tabData, userDefaultData);
+        tabData.setBusy(false);
+        //toolStartFilter.fireLiveChange();
+    },
+    error: function (data) {
+        tabData.setBusy(false);
+        sap.m.MessageToast.show(data.status);
+    }
+});
+
