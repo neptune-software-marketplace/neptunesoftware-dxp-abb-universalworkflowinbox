@@ -3,6 +3,8 @@ var helper;
 var layout;
 var groupedInbox;
 var currTaskTitle = "";
+var globalUserCaller;
+var substMode; //Maintain users substitutes  or Adapt not active subst.
 
 jQuery.sap.require("sap.ui.core.format.FileSizeFormat");
 jQuery.sap.require("sap.ui.layout.cssgrid.GridBoxLayout");

@@ -1,10 +1,11 @@
 sap.ui.core.BusyIndicator.show(0);
+
+
 sap.n.Planet9.function({
     id: "WorkflowInbox",
     method: "List",
     success: function (data) {
-        // if (!modeloListWorkflow.oData.length) closeDetail();
-        // modeloGridList.setData(data);
+  
         groupedInbox = groupBy(data, item => item.taskTitle);
         var inboxGroups = [];
         var inboxGroupItem;
@@ -31,6 +32,7 @@ sap.n.Planet9.function({
 
             inboxGroups.push(inboxGroupItem);
         })
+       // console.log("Inbox Data: ", inboxGroups);
         modeloGridList.setData(inboxGroups);
         modeloGridList.refresh(true);
 

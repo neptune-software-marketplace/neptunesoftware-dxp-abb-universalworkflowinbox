@@ -25,6 +25,17 @@ function closeDetail() {
 
 }
 
+function closeSubst() {
+
+    if (!helper) return;
+    
+    layout = helper.getNextUIState(0);
+    oLayoutMain.setLayout(layout.layout);
+
+    currPage = 'begin';
+
+}
+
 function fullScreenDetail() {
     oLayoutMain.setLayout(layout.actionButtonsInfo.midColumn.fullScreen);
 

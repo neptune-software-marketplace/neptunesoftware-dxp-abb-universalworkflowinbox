@@ -25,6 +25,7 @@ function uploadFile(event) {
                     success: function(data) {
                         ModelData.Add(oListAttachment, data);
                         oSectionAttachment.setVisible(true);
+                        sap.m.MessageToast.show(txtUploadOK.getText());
                     },
                     error: function(data) {
                         console.log(data);

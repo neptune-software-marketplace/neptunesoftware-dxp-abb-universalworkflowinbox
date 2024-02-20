@@ -29,3 +29,32 @@ function showMaster(taskTitleClicked) {
     }
     oListWorkflow.removeSelections();
 }
+
+
+
+function showSubstitutions() {
+    
+if(sap.n.Launchpad.isPhone()){
+    coltabSubTo.setVisible(false);
+    coltabSubFrom.setVisible(false);
+}else{
+coltabSubTo.setVisible(true);
+    coltabSubFrom.setVisible(true);
+}
+
+    toolStartUpdate.firePress();
+    oDiaSubst.open();
+
+}
+
+function showSubstitutionsDetail() {
+
+
+    if (sap.n) {
+        oNavContainer.to(localViewID + '--oPageSubstDetail');
+    } else {
+        oNavContainer.to('oPageSubstDetails');
+    }
+
+
+}

@@ -1,7 +1,3 @@
 var context = oEvent.oSource.getBindingContext();
 var data = context.getObject();
-showUserInfo(data.createdBy, this);var context = oEvent.oSource.getBindingContext();
-var data = context.getObject();
-showUserInfo(data.createdBy, this);var context = oEvent.oSource.getBindingContext();
-var data = context.getObject();
 showUserInfo(data.createdBy, this);

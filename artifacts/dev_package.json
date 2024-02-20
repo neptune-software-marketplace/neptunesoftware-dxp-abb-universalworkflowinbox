@@ -13,15 +13,6 @@
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "e431c068-ed91-4577-9b90-bfa1524eea02",
-			"application": "planet9_inbox_f3_v2_1",
-			"title": "Workflow Inbox",
-			"description": "Workflow Inbox - Fiori 3",
-			"package": {
-				"id": "d2c399bf-3b12-ed11-bd6e-000d3ab1d9ff"
-			}
-		},
-		{
 			"id": "e336b55e-cb88-ec11-a507-28187814b6f0",
 			"application": "planet9_inbox_f3_v2",
 			"title": "Workflow Inbox",
