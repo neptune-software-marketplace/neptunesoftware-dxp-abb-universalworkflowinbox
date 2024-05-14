@@ -9,7 +9,7 @@
 	},
 	"name": "neptunesoftware-dxp-abb-universalworkflowinbox",
 	"description": null,
-	"ver": "22.8.2.820",
+	"ver": "24.05.14.1636",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -18,7 +18,7 @@
 			"title": "Workflow Inbox",
 			"description": "Workflow Inbox - Fiori 3",
 			"package": {
-				"id": "d2c399bf-3b12-ed11-bd6e-000d3ab1d9ff"
+				"id": "D2C399BF-3B12-ED11-BD6E-000D3AB1D9FF"
 			}
 		},
 		{
@@ -27,7 +27,7 @@
 			"title": "Inbox Live Tile",
 			"description": "Inbox Live Tile",
 			"package": {
-				"id": "d2c399bf-3b12-ed11-bd6e-000d3ab1d9ff"
+				"id": "D2C399BF-3B12-ED11-BD6E-000D3AB1D9FF"
 			}
 		}
 	],

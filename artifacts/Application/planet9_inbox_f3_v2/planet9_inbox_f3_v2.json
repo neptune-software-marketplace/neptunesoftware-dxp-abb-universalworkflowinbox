@@ -6584,8 +6584,9 @@
 														{
 															"attribute": "press",
 															"grouping": "Events",
-															"value": "this.getParent().getParent().close();",
-															"script": "this.getParent().getParent().close();",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/butNoteClose/press.js",
+															"language": "javascript",
 															"translation": []
 														}
 													],
@@ -7931,7 +7932,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.03.27.0945",
+	"ver": "24.05.14.1638",
 	"application": "planet9_inbox_f3_v2",
 	"title": "Workflow Inbox",
 	"description": "Workflow Inbox - Fiori 3",

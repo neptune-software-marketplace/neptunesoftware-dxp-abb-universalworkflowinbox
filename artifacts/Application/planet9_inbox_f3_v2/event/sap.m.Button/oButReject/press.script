@@ -17,9 +17,11 @@ if (inNote.getValue() === '') {
         success: function (data) {
             handleUpdate("Reject");
             sap.ui.core.BusyIndicator.hide();
+            inNote.setValue();
         },
         error: function (data) {
             sap.ui.core.BusyIndicator.hide();
+            inNote.setValue();
 
         }
     });
