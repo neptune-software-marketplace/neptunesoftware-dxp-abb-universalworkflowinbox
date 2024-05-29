@@ -6501,6 +6501,14 @@
 									"value": "butNoteSave",
 									"script": "",
 									"translation": []
+								},
+								{
+									"attribute": "afterClose",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Dialog/diaNote/afterClose.js",
+									"language": "javascript",
+									"translation": []
 								}
 							],
 							"data": [
@@ -7932,7 +7940,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.05.14.1638",
+	"ver": "24.05.29.0925",
 	"application": "planet9_inbox_f3_v2",
 	"title": "Workflow Inbox",
 	"description": "Workflow Inbox - Fiori 3",
@@ -7957,7 +7965,7 @@
 	"ui5_url": "",
 	"cus_theme": "",
 	"css": "file:///css.css",
-	"compiledCss": "file://script/undefined/undefined.script",
+	"compiledCss": "file:///compiledCss.css",
 	"header": "",
 	"manifest": "",
 	"globalScript": null,

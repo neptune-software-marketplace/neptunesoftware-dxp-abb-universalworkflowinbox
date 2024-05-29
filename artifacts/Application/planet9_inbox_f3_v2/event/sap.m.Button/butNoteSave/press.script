@@ -1,21 +1,37 @@
-
-var rec = {};
-rec.id = modeloPageDetail.oData.id;
+let rec = {};
+rec.id = modeloPageDetail.getData().id;
 rec.text = inNote.getValue();
 
 sap.n.Planet9.function({
     id: "WorkflowInbox",
     method: "NoteSave",
     data: rec,
-    success: function(data) {
+    success: function (data) {
         modeloListNotes.setData(data.notes);
         oSectionNotes.setVisible(true);
     },
-    error: function(data) {
-        
-    }
-    
+    error: function (data) {},
 });
 
+const diaNoteCustomData = diaNote.getCustomData();
+const userAction = diaNoteCustomData.find((item) => item.getId() == "userAction");
+if (userAction?.getValue() == "reject") {
+    sap.m.MessageToast.show("Rejected");
+    sap.ui.core.BusyIndicator.show(0);
+    sap.n.Planet9.function({
+        id: "WorkflowInbox",
+        method: "Reject",
+        data: { id: modeloPageDetail.getData().id },
+        success: function (data) {
+            handleUpdate("Reject");
+            sap.ui.core.BusyIndicator.hide();
+            inNote.setValue();
+        },
+        error: function (data) {
+            sap.ui.core.BusyIndicator.hide();
+            inNote.setValue();
+        },
+    });
+}
 
 diaNote.close();

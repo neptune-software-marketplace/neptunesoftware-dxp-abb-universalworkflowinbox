@@ -1,35 +1,9 @@
-// Start WF
-console.log(modeloPageDetail.oData);
-
-if (inNote.getValue() === '') {
-    sap.m.MessageToast.show("Please give a reasone for rejection!");
-    inNote.setValue();
-    diaNote.open();
-
-} else {
-    //do reject;
-    sap.m.MessageToast.show("Rejected!");
-    sap.ui.core.BusyIndicator.show(0);
-    sap.n.Planet9.function({
-        id: "WorkflowInbox",
-        method: "Reject",
-        data: { id: modeloPageDetail.oData.id },
-        success: function (data) {
-            handleUpdate("Reject");
-            sap.ui.core.BusyIndicator.hide();
-            inNote.setValue();
-        },
-        error: function (data) {
-            sap.ui.core.BusyIndicator.hide();
-            inNote.setValue();
-
-        }
-    });
-}
-
-
-
-
-
-
-
+const headerTitle = objHeaderNote.getTitle();
+objHeaderNote.setTitle("Add reason for the rejection");
+butNoteSave.setText('Reject');
+butNoteSave.setType('Reject');
+diaNote.addCustomData(new sap.ui.core.CustomData("userAction", { key: "action", value: "reject" }));
+diaNote.addCustomData(
+    new sap.ui.core.CustomData("origTitle", { key: "title", value: headerTitle })
+);
+diaNote.open();
